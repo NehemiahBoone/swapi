@@ -14,4 +14,12 @@ export default class PlanetsController {
     ProxyState.on('planets', _draw)
     planetsService.getPlanets()
   }
+
+  previous() {
+    planetsService.previous()
+  }
+
+  next() {
+    planetsService.next()
+  }
 }

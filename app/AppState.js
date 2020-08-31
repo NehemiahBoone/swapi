@@ -5,8 +5,12 @@ import Planet from "./Models/Planet.js"
 
 // NOTE AppState is the object used to hold all the data from the app, this replaces _state = {}
 class AppState extends EventEmitter {
-  next = ''
-  previous = ''
+  nextChar = ''
+  previousChar = ''
+  nextPlan = ''
+  previousPlan = ''
+
+
   /** @type { Character[] } */
   characters = []
   /**@type { Planet[] } */
