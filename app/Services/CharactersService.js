@@ -4,8 +4,6 @@ import Character from "../Models/Character.js";
 import { api } from "./AxiosService.js";
 
 class CharactersService {
-
-
   getCharacters() {
     // NOTE "GET" is the method to retrieve data
     api.get('people')

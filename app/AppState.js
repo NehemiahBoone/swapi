@@ -11,8 +11,6 @@ class AppState extends EventEmitter {
   characters = []
   /**@type { Planet[] } */
   planets = []
-
-
 }
 
 export const ProxyState = new Proxy(new AppState(), {
