@@ -1,6 +1,7 @@
 import Character from "./Models/Character.js"
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
+import Planet from "./Models/Planet.js"
 
 // NOTE AppState is the object used to hold all the data from the app, this replaces _state = {}
 class AppState extends EventEmitter {
@@ -8,6 +9,8 @@ class AppState extends EventEmitter {
   previous = ''
   /** @type { Character[] } */
   characters = []
+  /**@type { Planet[] } */
+  planets = []
 
 
 }
